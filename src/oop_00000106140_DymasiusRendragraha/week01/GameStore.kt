@@ -8,6 +8,7 @@ fun main(){
 
     val finalPrice: Int = price - calculateDiscount(price).roundToInt()
 
+    //print recepit
     printReceipt(gameTitle, finalPrice)
 }
 
