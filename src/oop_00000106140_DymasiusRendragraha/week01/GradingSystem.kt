@@ -1,10 +1,12 @@
 package oop_00000106140_DymasiusRendragraha.week01
 
 fun main(){
-    var name: String = "John Thor"
-    var score: Int = 80
+    //REFACTOR: Gunakan val karena variabel tidak berubah
+    val name: String = "John Thor"
+    val score: Int = 80
 
-    // Concatenation gaya lama
-    println("Nama: " + name + " Score: " + score)
+    //String template
+    println("Nama: $name, Nilai: $score")
+
 }
 
