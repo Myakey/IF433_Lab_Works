@@ -14,4 +14,10 @@ class Student (
             println("LOG: Objek Student $name berhasil dialokasikan di Memory.");
         }
     }
+
+    //SECONDARY CONSTRUCTOR
+    //WAJIB MEMANGGIL Primary Constructor menggunakan 'this()'
+    constructor(name: String, nim: String) : this(name, nim, "Non-matriculated"){
+        println("LOG: Menggunakan constructor jalur umum (Tanpa jurusan).");
+    }
 }
