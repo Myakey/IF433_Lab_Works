@@ -4,6 +4,7 @@ class Student (
     val name: String,
     val nim: String,
     var major: String,
+    var gpa: Double = 0.0, // <-- Ini Default Argument
 ){
     init {
         //Validasi sederhana: CEK PANJANG NIM
