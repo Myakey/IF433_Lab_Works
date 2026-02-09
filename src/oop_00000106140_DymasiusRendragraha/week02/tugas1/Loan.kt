@@ -1,4 +1,4 @@
-package oop_00000106140_DymasiusRendragraha.week02
+package oop_00000106140_DymasiusRendragraha.week02.tugas1
 
 class Loan(
     val bookTitle: String,
