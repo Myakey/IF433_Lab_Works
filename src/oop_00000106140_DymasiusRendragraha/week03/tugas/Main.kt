@@ -7,4 +7,8 @@ fun main() {
     weapon.damage = 9999
 
     println("Tier weapon: ${weapon.tier}")
+
+    val player = Player("Nora")
+
+
 }

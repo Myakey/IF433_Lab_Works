@@ -18,7 +18,7 @@ class Player (
         val newLevel = level
 
         if (newLevel > oldLevel) {
-            println("Level Up! $username is now level $newLevel 🎉")
+            println("Selamat! $username sekarang level $level")
         }
     }
 }
