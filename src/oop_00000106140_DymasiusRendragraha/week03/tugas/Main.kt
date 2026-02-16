@@ -10,5 +10,7 @@ fun main() {
 
     val player = Player("Nora")
 
+    player.addXp(50)
+    player.addXp(60)
 
 }
