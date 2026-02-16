@@ -6,6 +6,12 @@ class Employee (val name: String) {
          println("Mecoba set gaji ke : $value")
          //Kode di bawah ini sangat berbahaya
          //Memanggil setter di dalam setter
-         this.salary = value;
+//         this.salary = value; (Jadi rekursif)
+         if (value < 0) {
+             println("Error gaji tidak boleh negatif!")
+             field = 0
+         } else {
+             field = value // Field untuk assign nilai asli
+         }
      }
 }
