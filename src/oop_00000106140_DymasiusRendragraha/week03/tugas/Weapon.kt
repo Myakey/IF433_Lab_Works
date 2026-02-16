@@ -6,8 +6,13 @@ class Weapon (
     var damage: Int = 0
         set(value){
             if (value > 0) {
-                println("Weapon $name set damage jadi $value")
-                field = value
+                if (value > 1000) {
+                    println("Weapon terlalu overpowered! Set jadi 1000")
+                    field = 1000
+                } else {
+                    println("Weapon $name set damage jadi $value")
+                    field = value
+                }
             } else {
                 println("Damage tidak boleh negatif!")
                 field = 0
