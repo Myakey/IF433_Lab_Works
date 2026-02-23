@@ -1,6 +1,6 @@
 package oop_00000106140_DymasiusRendragraha.week04
 
-class Vehicle(
+open class Vehicle(
     val brand: String
 ) {
     var speed: Int = 0
