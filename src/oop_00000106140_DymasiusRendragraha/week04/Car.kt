@@ -13,4 +13,9 @@ class Car(
     override fun honk() {
         println("TIN TIN! Mobil $brand lewat!")
     }
+
+    override fun accelerate() {
+        super.accelerate() //Memanggil logika penambahan kecepatan milik parent
+        println("Mobil $brand menggunakan transimisi gigi untuk menambah kecepatan.")
+    }
 }
