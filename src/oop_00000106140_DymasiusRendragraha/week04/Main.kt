@@ -19,4 +19,12 @@ fun main() {
     myElectricCar.accelerate()
     myElectricCar.openTrunk()
     myElectricCar.honk()
+    println("\n")
+
+    println("--- Testing Employee Hierarchy ---")
+    val mgr = Manager("Peter Griffin", 10000000)
+    val developer = Developer("Joe Swanson", 5000000, "Golang")
+    println("${mgr.name} sebagai manager mendapatkan bonus ${mgr.calculateBonus()}") // print bonus dari manager
+    println("${developer.name} sebagai developer mendapatkan bonus ${developer.calculateBonus()}")
+
 }
