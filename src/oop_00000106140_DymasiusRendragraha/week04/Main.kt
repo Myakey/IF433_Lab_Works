@@ -5,11 +5,18 @@ fun main() {
     val generalVehicle = Vehicle("Sepeda Onthel")
     generalVehicle.honk()
     generalVehicle.accelerate()
+    println("\n")
 
     println("--- Testing Car ---")
     val myCar = Car("Toyota", 4)
     myCar.openTrunk() //Memanggil method milik sendiri
     myCar.honk() //Memanggil method yang sudah di-overide
     myCar.accelerate() //Memanggil gabungan method Parent dan Child
+    println("\n")
 
+    println("--- Testing Electric Car ---")
+    val myElectricCar = ElectricCar("Hyundai", 4, 100)
+    myElectricCar.accelerate()
+    myElectricCar.openTrunk()
+    myElectricCar.honk()
 }
