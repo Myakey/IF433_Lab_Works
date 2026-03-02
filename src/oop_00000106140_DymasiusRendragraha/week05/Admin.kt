@@ -7,6 +7,6 @@ class Admin(nama: String) : Pegawai(nama) {
 
     //Fungsi unik yang hanya dimiliki admin
     fun doAdminWork() {
-        println("[$nama] sedang merekap data absensi mahasiswa. ")
+        println("[$nama] sedang merekap data absensi mahas")
     }
 }
