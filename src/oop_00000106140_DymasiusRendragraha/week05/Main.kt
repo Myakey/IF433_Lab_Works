@@ -26,4 +26,11 @@ fun main() {
         }
         println("------------------------------------")
     }
+
+    println("=== Math Test ===")
+    val mathHelp1 = MathHelper()
+
+    println("Math hitung luas dengan sisi 3 ${mathHelp1.hitungLuas(sisi = 3)}")
+    println("Math hitung luas dengan panjang 3 lebar 2 ${mathHelp1.hitungLuas(panjang = 3, lebar = 2)}")
+    println("Math hitung luas dengan jari - jari 3 ${mathHelp1.hitungLuas(jariJari = 3.0)}")
 }
