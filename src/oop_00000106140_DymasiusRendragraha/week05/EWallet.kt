@@ -4,9 +4,9 @@ class EWallet(accountName: String,  var balance: Double) : PaymentMethod(account
     override fun processPayment(amount: Double) {
         if (balance >= amount) {
             balance -= amount
-           println("Cukup dan sukses!")
+           println("Pembayaran dengan E Wallet Cukup dan sukses!")
         } else {
-            println("Tidak cukup!")
+            println("Pembayaran dengan  E Wallet Tidak cukup!")
         }
     }
 
