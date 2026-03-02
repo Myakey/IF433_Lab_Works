@@ -33,4 +33,15 @@ fun main() {
     println("Math hitung luas dengan sisi 3 ${mathHelp1.hitungLuas(sisi = 3)}")
     println("Math hitung luas dengan panjang 3 lebar 2 ${mathHelp1.hitungLuas(panjang = 3, lebar = 2)}")
     println("Math hitung luas dengan jari - jari 3 ${mathHelp1.hitungLuas(jariJari = 3.0)}")
+
+
+    println("=== Payment Test ===")
+    val eWallet = EWallet("Budi", 100000.0)
+    val creditCard = CreditCard("Budi", 1000000.0)
+
+    val daftarPayment: List<PaymentMethod> = listOf(eWallet, creditCard)
+
+    for (payment in daftarPayment) {
+        payment.processPayment(75000.0)
+    }
 }
