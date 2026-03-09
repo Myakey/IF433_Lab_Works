@@ -20,8 +20,19 @@ fun main() {
     processCheckout(pay1, 50000.0)
     processCheckout(pay2, 1500000.0)
 
+    println("\n=== TESTING RUMAH PINTAR ===")
     val lampu = SmartLamp(name = "Ruang Tamu")
     val SmartSpeaker = SmartSpeaker(name="Google Nest Dapur")
     val SmartCCTV = SmartCCTV(name="Ezviz Garasi")
 
+    val hub = SmartHomeHub()
+
+    hub.addDevice(lampu)
+    hub.addDevice(SmartSpeaker)
+    hub.addDevice(SmartCCTV)
+
+    println("SECURITY MODE AKTIF!\n")
+    hub.activateSecurityMode()
+    println("\nMATIKAN SEMUA DEVICE!")
+    hub.turnOfAllSwitches()
 }
