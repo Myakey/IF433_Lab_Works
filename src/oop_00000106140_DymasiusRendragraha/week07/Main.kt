@@ -38,4 +38,10 @@ fun main() {
     }
 
     println("Message: $uiMessage")
+
+
+    //UJI COBA GAME!
+    println("\n=== UJI COBA GAME ===")
+    GameManager.startGame()
+    GameManager.startGame()
 }
