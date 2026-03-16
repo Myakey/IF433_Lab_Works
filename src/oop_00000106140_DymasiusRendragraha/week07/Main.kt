@@ -1,5 +1,11 @@
 package oop_00000106140_DymasiusRendragraha.week07
 
 fun main() {
-    val client = NetworkClient("http://api.umn.ac.id")
+    println("=== TES SINGLETON ===")
+    println("Status: ${DatabaseManager.connectionStatus}")
+    DatabaseManager.connect()
+
+    println("\n=== TES COMPANION OBJECT ===")
+    val client = NetworkClient.createClient() //Instansiasi lewat factory
+    client.connect()
 }
