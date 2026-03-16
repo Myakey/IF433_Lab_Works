@@ -15,12 +15,9 @@ class SmartHomeHub(val devices: MutableList<SmartDevice> = mutableListOf()) {
 
     fun activateSecurityMode() {
         for(device in devices) {
-            if (device is Recordable) {
-                device.startRecord()
-            }
-
-            if (device is SmartSpeaker) {
-                device.playMusic("Sirine Peringatan")
+            when(device) {
+                is Recordable -> device.startRecord()
+                is SmartSpeaker -> device.playMusic("Sirine Peringatan")
             }
         }
     }
