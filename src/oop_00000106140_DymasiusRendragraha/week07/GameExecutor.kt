@@ -10,7 +10,7 @@ fun processEvent(event: BattleState) {
             println("Mendapat loot: $itemName (${rarity})")
         }
         is BattleState.GameOver -> {
-            println("Game Over! Kamu kalah dalam battle.")
+            println("Game Over! Karna ${event.reason}")
         }
         BattleState.SafeZone -> {
             println("Anda berada di Safe Zone. Aman!")

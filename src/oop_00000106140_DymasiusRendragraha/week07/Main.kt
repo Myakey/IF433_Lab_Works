@@ -48,4 +48,13 @@ fun main() {
     println("Rarity Legendary: ${ItemRarity.LEGENDARY.dropChance}")
     val weapon1 = Weapon.forgeStarterSword()
     println("Detail senjata item : ${weapon1.item}, Durability: ${weapon1.durability}")
+
+    //Simulasi immutability dan sinyal event
+    val weapon2 = weapon1.item.copy(damage = 25)
+    println("Detail senjata UPGRADE : ${weapon2}")
+
+    processEvent(BattleState.SafeZone)
+    processEvent(BattleState.MonsterEncounter("Goblin Nakal!"))
+    processEvent(BattleState.LootDropped(weapon2))
+    processEvent(BattleState.GameOver("Terkena Jebakan Racun!"))
 }
