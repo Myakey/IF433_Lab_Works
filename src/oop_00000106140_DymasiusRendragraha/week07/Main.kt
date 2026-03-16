@@ -44,4 +44,8 @@ fun main() {
     println("\n=== UJI COBA GAME ===")
     GameManager.startGame()
     GameManager.startGame()
+
+    println("Rarity Legendary: ${ItemRarity.LEGENDARY.dropChance}")
+    val weapon1 = Weapon.forgeStarterSword()
+    println("Detail senjata item : ${weapon1.item}, Durability: ${weapon1.durability}")
 }
