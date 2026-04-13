@@ -33,3 +33,9 @@ bin/
 
 .idea/
 *.iml
+
+# Kotlin/Java build output
+out/
+*.class
+*.jar
+app.jar
