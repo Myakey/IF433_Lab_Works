@@ -50,7 +50,7 @@ fun main() {
     println("Detail senjata item : ${weapon1.item}, Durability: ${weapon1.durability}")
 
     //Simulasi immutability dan sinyal event
-    val weapon2 = weapon1.item.copy(damage = 25)
+    val weapon2 = weapon1.item.copy(damage=25)
     println("Detail senjata UPGRADE : ${weapon2}")
 
     processEvent(BattleState.SafeZone)
