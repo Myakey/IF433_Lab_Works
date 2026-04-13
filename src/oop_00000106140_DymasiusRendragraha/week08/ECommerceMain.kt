@@ -1,6 +1,7 @@
 package oop_00000106140_DymasiusRendragraha.week08
 
 fun main() {
+    //TESTED
     val rawApiData: List<Map<String, Any?>> = listOf(
         mapOf("id" to "E01", "name" to "Laptop", "type" to "ELECTRONIC", "warranty" to 24),
         mapOf("id" to "C01", "name" to "T-Shirt", "type" to "CLOTHING", "size" to "XL"),
