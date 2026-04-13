@@ -41,6 +41,14 @@ class ApiParser {
 
         val transactionId = JavaPaymentService.processPayment(id)!!
 
+        when (product) {
+            is Product.Electronic ->
+                println("${product.name} (Warranty ${product.warrantyMonths})")
+
+            is Product.Clothing ->
+                println("${product.name} (Size ${product.size})")
+        }
+
         println(transactionId)
     }
 }
