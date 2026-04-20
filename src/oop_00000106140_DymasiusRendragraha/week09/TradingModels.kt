@@ -50,4 +50,8 @@ fun main() {
         .toSet()
 
     println(uniquePairs)
+
+    println("=== CRYPTO TRADING DASHBOARD ===")
+    println("1. TOP PERFORMERS")
+    topPerformersString.forEach { println(it) }
 }
