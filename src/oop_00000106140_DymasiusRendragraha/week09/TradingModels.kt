@@ -8,3 +8,15 @@ data class TradeLog(
     val status: String
 )
 
+fun main() {
+    val tradeHistory = listOf(
+        TradeLog("BTCUSDT", "LONG", 20, 15.5, "CLOSED"),
+        TradeLog("ETHUSDT", "SHORT", 10, -5.2, "CLOSED"),
+        TradeLog("BTCUSDT", "SHORT", 50, 120.0, "CLOSED"),
+        TradeLog("SOLUSDT", "LONG", 10, -10.0, "CLOSED"),
+        TradeLog("ETHUSDT", "LONG", 20, 5.0, "OPEN"),
+        TradeLog("BNBUSDT", "SHORT", 5, -2.5, "CLOSED")
+    )
+
+
+}
