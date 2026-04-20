@@ -22,4 +22,9 @@ fun main() {
         .filter{ it.status == "CLOSED" }
 
     println(closedTrades)
+
+    val winningTrades = closedTrades
+        .filter{ it.roe > 0 }
+
+    println(winningTrades)
 }
