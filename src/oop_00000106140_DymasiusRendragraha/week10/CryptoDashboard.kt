@@ -25,4 +25,11 @@ fun main() {
     txRepo.add(Transaction("BTC-0001", 2.5453))
     txRepo.add(Transaction("ETH-0002", 1.25))
     txRepo.add(Transaction("USDT-0003", 500.0))
+
+    println("===Transaction History===")
+    txRepo.getAll().forEach{ history ->
+        println("Transaction: ${history.name}")
+        println("Amount: ${history.amount}")
+        print("\n\n")
+    }
 }
