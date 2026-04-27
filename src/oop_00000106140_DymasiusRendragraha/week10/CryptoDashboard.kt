@@ -19,4 +19,10 @@ fun main() {
         println("Balance: ${c.balance}")
         print("\n\n")
     }
+
+    val txRepo = WalletRepository<Transaction>()
+
+    txRepo.add(Transaction("BTC-0001", 2.5453))
+    txRepo.add(Transaction("ETH-0002", 1.25))
+    txRepo.add(Transaction("USDT-0003", 500.0))
 }

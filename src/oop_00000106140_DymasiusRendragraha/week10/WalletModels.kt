@@ -7,8 +7,9 @@ data class Coin(
 
 data class Transaction(
     val id: String,
-    val amount: Double
-)
+    val amount: Double,
+    override val name: String = id
+): HasName
 
 interface HasName {
     val name: String
