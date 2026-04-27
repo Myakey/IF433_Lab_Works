@@ -11,4 +11,12 @@ fun main() {
 
     val response = ApiResponse("200 OK", coinRepo.getAll())
 
+    println("===API RESPONSE FOR WALLET===")
+    println("Status: ${response.status}")
+
+    response.data.forEach{ c ->
+        println("Coin: ${c.name}")
+        println("Balance: ${c.balance}")
+        print("\n\n")
+    }
 }
