@@ -19,4 +19,12 @@ fun main() {
         println("(LOG) Kamera Terhubu")
         homeDevices.add(it)
     }
+
+    val ac1 = run {
+        val dev = SmartDevice("Daikin Inverter (Kabel 3x2.5)", "HVAC", false, 800)
+        dev
+    }
+    homeDevices.add(ac1)
+
+    homeDevices.add(SmartDevice("Picolo's Auto Feeder", "Pet Care", true, 10))
 }
