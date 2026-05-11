@@ -41,7 +41,7 @@ fun main() {
     val result = runCatching {
         dispenseKibble(30, currentKibbleStock, false)
     }
-
+    //test run
     result
         .onSuccess { newStock ->
             currentKibbleStock = newStock
